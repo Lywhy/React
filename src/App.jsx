@@ -1,13 +1,15 @@
-import Button from "./components/Button/Button"
 import Heading from "./components/Heading/Heading"
+import Header from "./components/layout/Header/Header"
 import Paragraph from './components/Paragraph/Paragraph'
+import SearchBlock from "./components/Search/SearchBlock"
 
 function App() {
 
   return (
     <>
+      <Header />
       <Heading title={"Поход в горы"} />
-      <Button text={"Сохранить"} />
+      <SearchBlock />
       <Paragraph text={"Горные походы открывают удивительные природные ландшафты, испытывают туристов физически и морально, дают возможность почувствовать себя первопроходцем."} />
     </>
   )
