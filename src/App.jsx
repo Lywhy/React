@@ -1,3 +1,4 @@
+import CardList from "./components/CardList/CardList"
 import Heading from "./components/Heading/Heading"
 import Header from "./components/layout/Header/Header"
 import Paragraph from './components/Paragraph/Paragraph'
@@ -11,6 +12,7 @@ function App() {
       <Heading title={"Поход в горы"} />
       <SearchBlock />
       <Paragraph text={"Горные походы открывают удивительные природные ландшафты, испытывают туристов физически и морально, дают возможность почувствовать себя первопроходцем."} />
+      <CardList />
     </>
   )
 }
