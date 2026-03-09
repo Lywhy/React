@@ -2,7 +2,8 @@ import Card from "../Card/Card";
 import imageOne from "../../../assets/1+1.jpg"
 import imageTwo from "../../../assets/gentelemen.png"
 import imageThree from "../../../assets/shou.png"
-import './cardList.css'
+import styles from './CardList.module.css'
+import cn from 'classnames'
 
 const testData = [
     {
@@ -28,7 +29,7 @@ const testData = [
 export default function CardList() {
     return (
         <>
-            <div className="card-list">
+            <div className={cn(styles["card-list"])}>
                 {testData.length === 0 ? <div>Тут ничего нет</div> : testData.map(item => {
                     return (
                         <Card item={item} />

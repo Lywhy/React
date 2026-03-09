@@ -1,6 +1,6 @@
 import { Bookmark, LogIn } from "lucide-react";
-import './header.css'
-
+import styles from './Header.module.css'
+import cn from 'classnames'
 
 export default function Header() {
     return (
@@ -8,10 +8,10 @@ export default function Header() {
             <div>
                 <a href="#"><Bookmark color="white" /></a>
             </div>
-            <div className="links">
+            <div className={cn(styles["links"])}>
                 <a href="#">Поиск фильмов</a>
                 <a href="#">Мои фильмы</a>
-                <div className="link-log">
+                <div className={cn(styles["link-log"])}>
                     <a href="#">Войти</a>
                     <LogIn color="white" />
                 </div>
