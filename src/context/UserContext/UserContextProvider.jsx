@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { UserContext } from "./UserContext";
 
 export function UserContextProvider({ children }) {
@@ -8,6 +8,10 @@ export function UserContextProvider({ children }) {
         const users = JSON.parse(localStorage.getItem('users') || '[]');
         setCurrentUser(users.find(user => user.isLogined));
     };
+
+    useEffect(() => {
+        refreshUser()
+    }, [])
 
     return (
         <UserContext.Provider value={{ currentUser, refreshUser }}>
