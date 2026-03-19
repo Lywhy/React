@@ -7,6 +7,8 @@ import Error from "./pages/Error/Error"
 import './index.css'
 import Layout from './layout/LayoutMenu/Layout'
 import Product from './pages/Product/Product'
+import Favorites from './pages/Favorites/Favorites'
+import Login from './pages/Login/Login'
 
 const router = createBrowserRouter([
     {
@@ -30,6 +32,14 @@ const router = createBrowserRouter([
     {
         path: '/cart',
         element: <Cart />
+    },
+    {
+        path: '/login',
+        element: <Login />
+    },
+    {
+        path: '/favorites',
+        element: <Favorites />
     },
     {
         path: '*',
